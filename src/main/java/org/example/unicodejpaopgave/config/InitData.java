@@ -17,13 +17,10 @@ public class InitData implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-//        unicode1.setBogstav('B');
-//        unicode1.setKommentar("this is a B");
-//        unicodeRepository.save(unicode1);
 
         Set<Character> unicodeSet = new HashSet<>();
 
-        for (int i = 0; i <= 100; i++) {
+        for (int i = 0; i <= 1000; i++) {
             char c = (char) i;
             unicodeSet.add(c);
         }
@@ -38,12 +35,5 @@ public class InitData implements CommandLineRunner {
             }
             unicodeRepository.save(unicode1);
         }
-
-        // gemmer i til x unicode/chars i db
-//        for (int i = 97; i < 107; i++) {
-//            Unicode unicode1 = new Unicode();
-//            unicode1.setBogstav((char) i);
-//            unicodeRepository.save(unicode1);
-//        }
     }
 }
