@@ -16,5 +16,6 @@ public class UnicodeRestController {
     public String charToUnicode(@PathVariable char c) {
         int unicode = (int) c;
         return "char = " + c + "\n unicode = " + unicode;
+
     }
 }
